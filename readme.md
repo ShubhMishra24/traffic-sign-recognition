@@ -1,64 +1,63 @@
-
 # 🚦 Traffic Sign Recognition using CNN
 
-## 📌 Project Description
-This project uses a Convolutional Neural Network (CNN) built with TensorFlow and Keras to recognize and classify traffic signs from images.
+## 📌 Project Overview
+This project is a deep learning-based Traffic Sign Recognition system built using Convolutional Neural Networks (CNN).  
+It classifies traffic sign images into multiple categories using a trained TensorFlow/Keras model.
 
 ---
 
 ## 🧠 Tech Stack
-- Python
-- TensorFlow / Keras
-- OpenCV
-- NumPy
-- Matplotlib
+- Python  
+- TensorFlow / Keras  
+- OpenCV  
+- NumPy  
+- Matplotlib  
+- Scikit-learn  
 
 ---
 
 ## 📂 Dataset
-Used Traffic Sign Dataset (GTSRB-like structure)
-
-Folder format:
-```
+Used a Traffic Sign Dataset (GTSRB-like structure)
 DATA/
 ├── 0/
 ├── 1/
 ├── 2/
-```
+├── ...
+├── N/
 
-Each folder represents a different traffic sign class.
+Each folder contains images corresponding to a specific traffic sign category.
+---
+
+## 🏗️ Model Architecture
+- Convolutional Neural Network (CNN)
+- Data Augmentation (rotation, flip, zoom)
+- Multiple Conv2D + MaxPooling layers
+- Dense fully connected layers
+- Softmax output layer
 
 ---
 
 ## ⚙️ How to Run
 
-1. Install dependencies:
-```bash id="r2"
-pip install tensorflow opencv-python numpy pandas matplotlib scikit-learn
-```
-2. Run training file:
-```bash id="r3"
-  python train.py
-```
+### 1. Install dependencies
+   pip install tensorflow opencv-python numpy pandas matplotlib scikit-learn
 
----
+ 2. Run training
+    python train.py
 
-## 🚀 Features
-- Image classification using CNN
-- Data augmentation
-- Real-time prediction support (can be added)
+📊 Results
+● Achieved ~95% validation accuracy
+● Efficient multi-class image classification
+● Good generalization on unseen traffic sign images
 
----
+🚀 Features
+● CNN-based image classification
+● Data augmentation for better generalization
+● Scalable dataset handling
+● Ready for real-time prediction extension
 
-## 📊 Output
-Model learns to classify different traffic signs with high accuracy.
+👨‍💻 Author
+Shubh Kumar Mishra
 
----
-
-## 👨‍💻 Author
-Shubh Kumar Mishra 
-
----
-
-## 📌 Note
-This project is part of my Machine Learning portfolio.
+📌 Note
+This project is part of my Machine Learning portfolio and demonstrates end-to-end deep learning workflow for image classification.
