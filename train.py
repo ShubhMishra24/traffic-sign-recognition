@@ -106,3 +106,19 @@ model.add(Dropout(0.2))
 model.add(Dense(128, activation='relu'))
 
 model.add(Dense(len(labelfile), activation='softmax'))
+
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.optimizers import Adam
+import numpy as np
+
+model.compile(
+    optimizer=Adam(learning_rate=0.001),
+    loss='sparse_categorical_crossentropy',
+    metrics=['accuracy']
+)
+
+history = model.fit(
+    train_ds,
+    validation_data=val_ds,
+    epochs=10
+)
